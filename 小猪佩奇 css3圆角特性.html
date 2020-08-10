@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>03 CSS3圆角边框（小猪乔治）</title>
+    <style>
+    	div{
+    		position: absolute;
+
+    	}
+    	 .ear_left{
+    		width:14px;
+            height:34px;
+            top:156px;
+            left:126px;
+            border:3px solid #ef96c2;
+            border-bottom-color: transparent;
+            border-radius:50% 50% 50% 50%/ 35% 40% 50% 50%;
+            background-color:#ffb3da;
+            z-index:99;
+            transform:rotate(-28deg);
+             } 
+    	
+      
+         .ear_right{
+       	    width:14px;
+            height:34px;
+            top:140px;
+            left:160px;
+            border:3px solid #ef96c2;
+            border-bottom-color: transparent;
+            border-radius:50% 50% 50% 50%/ 35% 40% 50% 50%;
+            background-color:#ffb3da;
+            z-index:99;
+            transform:rotate(-10deg);
+       }
+       .pig_head{
+       	width: 153px;
+       	height: 112px;
+       	top: 169px;
+       	left: 105px;
+       	border-radius:66% 46% 66% 67%;
+       	border: 3px solid #ef96c2;
+       	background-color:#ffb3da;
+       	transform:rotate(-11deg);
+       	box-sizing:border-box;
+       	z-index: 88;
+       }
+       .pig_head_white_left_bottom{
+       	width: 120px;
+       	height: 75px;
+       	top: 45px;
+       	left: 55px;
+       	background-color:#fff;
+       	transform:rotate(-11deg);
+       	box-sizing:border-box;
+       	z-index: 89;
+       }
+
+       .pig_nose{
+       	width: 39px;
+       	height: 50px;
+       	top: 165px;
+       	left: 214px;
+       	border-radius:  50%/50%;
+       	border: 3px solid #ef96c2;
+       	background-color:#ffb3da;
+       	transform:rotate(-25deg);
+       	box-sizing:border-box;
+       	z-index: 91;
+       }
+       .pig_jaw{
+       	width: 70px;
+       	height: 75px;
+       	top: 209px;
+       	left: 146px;
+       	border-radius: 64px 39px 136px 0;
+       	border: 3px solid #ef96c2;
+       	background-color:#ffb3da;
+       	border-left-color: #ffb3da;
+       	border-top-color: #ffb3da;
+       	transform:rotate(11deg);
+       	box-sizing:border-box;
+       	z-index: 90;
+       }
+       .pig_jaw_left{
+       	width: 50px;
+       	height: 51px;
+       	top: 219px;
+       	left: 118px;
+       	background-color: #ffb3da;
+       	border-bottom: 3px solid #ef96c2;
+       	border-radius: 0 0 20px 20px/10px;
+       	transform:rotate(36deg);
+        z-index: 90;
+       }
+       .pig_nose_bottom{
+       		width: 46px;
+       	height: 40px;
+       	top: 181px;
+       	left: 205px;
+       	border-radius: 50px 50px 139px 0;
+       	border: 3px solid #ef96c2;
+       	background-color:#ffb3da;
+       	border-left-color: #ffb3da;
+       	border-top-color: #ffb3da;
+       	border-right-color: #ffb3da;
+       	transform:rotate(-18deg);
+       	box-sizing:border-box;
+        z-index: 90;
+       }
+       .nostril_left{
+       	width: 9px;
+       	height: 9px;
+       	top: 186px;
+       	left: 223px;
+       	background: #da6c9b;
+       	border-radius: 50%;
+       	z-index: 100;
+
+       }
+       .nostril_right{
+       	width:9px;
+       	height: 9px;
+       	top: 181px;
+       	left: 235px;
+       	background: #da6c9b;
+       	border-radius: 50%;
+       	z-index: 100;
+       }
+      .left_eye{
+      	width: 20px;
+      	height: 20px;
+      	top:183px;
+      	left: 176px;
+      	background-color: #fff;
+      	border: 2px solid #ef96c2;
+      	border-radius: 50%;
+      	z-index: 89;
+      }
+      .left_eye_ball{
+      	width: 8px;
+      	height: 9px;
+      	top:2px;
+      	left: 8px;
+      	background-color: #000;
+      	border-radius: 50%;
+      	z-index: 99;
+      }
+      .right_eye{
+      	width: 20px;
+      	height: 20px;
+      	top:191px;
+      	left: 147px;
+      	background-color: #fff;
+      	border: 2px solid #ef96c2;
+      	border-radius: 50%;
+      	z-index: 90;
+      }
+      .right_eye_ball{
+      	width: 8px;
+      	height: 9px;
+      	top:1px;
+      	left: 7px;
+      	background-color: #000;
+      	border-radius: 50%;
+      	z-index: 99;
+      }
+      .mouth{
+      	width: 48px;
+      	height: 38px;
+      	top:213px;
+      	left: 151px;
+      	border:solid 4px #da6c9b;
+      	border-color:#da6c9b transparent transparent transparent;
+      	border-radius: 50%/40px 40px 0 0;
+      	z-index: 91;
+      	transform:rotate(-202deg);
+      }
+      .face{
+      	width: 26px;
+      	height: 35px;
+      	top:215px;
+      	left: 118px;
+      	background-color:#ff96ce;
+      	border-radius: 50%;
+      	z-index: 90;
+      	
+
+      }
+      .hand_left_top{
+      	width: 16px;
+      	height: 3px;
+      	top: 299px;
+      	left: 77px;
+      	background-color: #ffb3da;
+      	border-radius: 25%;
+      	transform:rotate(46deg);
+      }
+      .hand_left_bottom{
+      	width: 16px;
+      	height: 4px;
+      	top: 307px;
+      	left: 83px;
+      	background-color: #ffb3da;
+      	border-radius: 25%;
+      	transform:rotate(-73deg);
+      }
+      .hand_left_middle{
+      	width: 55px;
+      	height: 4px;
+      	top: 296px;
+      	left: 75px;
+      	background-color: #ffb3da;
+      	border-radius: 25%;
+      	transform:rotate(-27deg);
+      	z-index: 99;
+      }
+      .pig_body_bottom{
+      	width: 126px;
+       	height: 118px;
+       	top: 249px;
+       	left: 103px;
+       	border-radius:  105% 75% 104% 76%;
+       	border: 3px solid #4f81b4;
+       	background-color:#7392e2;
+       	transform:rotate(-11deg);
+       	box-sizing:border-box;
+       	z-index: 89;
+      }
+      .hand_right_top{
+      	width: 21px;
+      	height: 3px;
+      	top: 294px;
+      	left: 257px;
+      	background-color: #ffb3da;
+      	border-radius: 25%;
+      	transform:rotate(-24deg);
+      }
+      .hand_right_bottom{
+      	width: 16px;
+      	height: 3px;
+      	top: 305px;
+      	left: 252px;
+      	background-color: #ffb3da;
+      	border-radius: 25%;
+      	transform:rotate(46deg);
+      }
+      .hand_right_middle{
+      	width: 57px;
+      	height: 4px;
+      	top: 294px;
+      	left: 217px;
+      	background-color: #ffb3da;
+      	border-radius: 25%;
+      	transform:rotate(20deg);
+      }
+      .tail_left{
+      	width: 30px;
+      	height: 30px;
+      	top: 318px;
+      	left: 85px;
+      	background-color: #fff;
+        border-right: 3px #ffb3da solid;
+      	border-radius: 50%;
+      	transform:rotate(46deg);
+      }
+     .tail_circle{
+     	width: 7px;
+      	height: 7px;
+      	top: 336px;
+      	left: 95px;
+      	background-color: #fff;
+        border: 3px #ffb3da solid;
+      	border-radius: 50%;
+      	transform:rotate(46deg);
+      	z-index: 88;
+     }
+     .tail_right{
+     	width: 34px;
+      	height: 22px;
+      	top: 320px;
+      	left: 84px;
+      	background-color: #fff;
+        border-right:  3px #ffb3da solid;
+      	border-radius: 50%;
+      	transform:rotate(114deg);
+     }
+     .pig_shadow{
+     	width: 133px;
+    height: 45px;
+    top: 365px;
+    left: 101px;
+    border-radius: 50% 50% 50% 50%/ 50% 50% 50% 50%;
+    background-color: rgba(171, 171, 171, 0.7);
+    transform: rotate(-1deg);
+     }
+     .left_foot{
+     width: 11px;
+    height: 32px;
+    top: 357px;
+    left: 136px;
+    border-radius: 100% 100% 100% 100%/ 50% 50% 21% 20%;
+    background-color: #ffbadf;
+    z-index: 99;
+     }
+     .left_shoes {
+	width: 30px;
+    height: 14px;
+    top: 385px;
+    left: 134px;
+    border-radius: 187% 58% 50% 180%/123% 130% 100% 113%;
+    background-color: #000;
+    z-index: 99;
+    transform: rotate(0deg);
+}
+.right_foot {
+	left: 178px;
+	z-index: 88;
+}
+.right_shoes {
+	left: 177px;
+}
+    </style>
+</head>
+
+<body>
+    <div class="wrapper">
+        <header>
+            <h3>03 CSS3圆角边框（小猪乔治）</h3>
+        </header>
+      <!--   <img src="peppa-george.jpg" alt=""> -->
+        <div class="pig_container">
+         <!-- 猪头 -->
+        <div>
+        <!-- 耳朵 -->
+        <div class="ear_left"></div>
+        <div class="ear_right"></div>
+        <div class="pig_head">
+            <div class="pig_head_white_left_bottom"></div>
+            <div class="pig_head_white_left_top"></div>
+        </div>
+        <!-- 鼻子 -->
+        <div class="pig_nose"></div>
+        <!-- 下巴 -->
+        <div class="pig_jaw"></div>
+        <div class="pig_jaw_left"></div>
+        <div class="pig_nose_bottom"></div>
+        <!-- 鼻孔 -->
+        <div class="nostril_left"></div>
+        <div class="nostril_right"></div>
+        <!-- 左眼 -->
+        <div class="left_eye">
+            <div class="left_eye_ball"></div>
+        </div>
+        <!-- 右眼 -->
+        <div class="right_eye">
+            <div class="right_eye_ball"></div>
+        </div>
+        <!-- 嘴巴 -->
+        <div class="mouth"></div>
+        <!-- 脸颊 -->
+        <div class="face"></div>
+        </div>
+    <!-- 左手 -->
+    <div>
+        <div class="hand_left_top"></div>
+        <div class="hand_left_middle"></div>
+        <div class="hand_left_bottom"></div>        
+    </div>
+    <!-- 身体 -->
+    <div class="pig_body_bottom"></div>
+    <div class="pig_body_top"></div>
+    <!-- 右手 -->
+    <div>
+        <div class="hand_right_top"></div>
+        <div class="hand_right_middle"></div>
+        <div class="hand_right_bottom"></div>        
+    </div>   
+    <!-- 尾巴 -->
+    <div class="tail_left"></div>
+    <div class="tail_circle"></div>
+    <div class="tail_right"></div>
+    <!-- 底部阴影 -->
+    <div class="pig_shadow"></div>
+    <!-- 左脚 -->
+    <div class="left_foot"></div>
+    <div class="left_foot right_foot"></div>
+    <!-- 左鞋 -->
+    <div class="left_shoes"></div>
+    <div class="left_shoes right_shoes"></div>
+   
+    </div>
+    <img src="">
+</div>
+</body>
+
+</html>
